@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context="com.remote.glasses.activity.LoginActiviy">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="26%w"
+            app:layout_marginTopPercent="10%"
+            android:background="@drawable/logo_happy"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_widthPercent="33%"
+            app:layout_marginTopPercent="15%"
+            android:background="@android:color/white"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="10%w"
+                app:layout_heightPercent="10%w"
+                android:layout_margin="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_username"/>
+
+            <EditText
+                android:id="@+id/login_uname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入用户名"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            app:layout_widthPercent="33%"
+            android:layout_height="@dimen/line_defaut"
+            android:background="@color/grayDark"
+            android:layout_gravity="center"/>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_widthPercent="33%"
+            android:background="@android:color/white"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="10%w"
+                app:layout_heightPercent="10%w"
+                android:layout_margin="8dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/icon_password"/>
+
+            <EditText
+                android:id="@+id/login_pas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:password="true"
+                android:background="@null"
+                android:hint="请输入密码"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            app:layout_widthPercent="28%"
+            app:layout_marginTopPercent="10%"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/login_btn_selector"
+            android:text="登录"
+            android:textSize="@dimen/font_size_20sp"
+            android:textColor="@android:color/white"/>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

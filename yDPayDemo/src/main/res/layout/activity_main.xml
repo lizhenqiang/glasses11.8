@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <EditText
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="key"
+                android:text="ZSxWsiu0IATkWl538NcojwWMXxwN26sd7oWSlm9x9fiq0"
+                android:textSize="12sp" >
+
+            </EditText>
+            
+            <EditText
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="amount"
+                android:text="10000"
+                android:inputType="number"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="phoneNumber"
+                android:text="18801233886"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/orderNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="outTradeNumber"
+                android:text="123456789"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/noticeUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="callbackUrl"
+                android:text="http://www.baidu.com"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/isScan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="isScanPay"
+                android:text="3"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/appId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="appId"
+                android:text="7772378641"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/storeCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="storeCode"
+                android:text="11111111111111111"
+                android:textSize="12sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/operatorCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="operatorCode"
+                android:textSize="12sp" >
+            </EditText>
+            
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="   输出结果" />
+            
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="start" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

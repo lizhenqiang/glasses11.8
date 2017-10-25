@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/frag_glasses_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/login_btn_selector"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="扫一扫"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_20sp"
+        />
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:scrollbars="none"
+        android:id="@+id/frag_glasses_sv_info"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返 回"
+                    android:gravity="left"
+                    android:layout_margin="10dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/login_btn_selector"
+                    android:gravity="center"
+                    android:text="配镜数据"
+                    android:textColor="@color/white"
+                    app:layout_textSizePercent="45%"
+                    />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_gray_deep"
+                android:orientation="vertical"
+                >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="品牌:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_brand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="类别:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="型号:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_model"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="颜色:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="套餐:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_package"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="数量:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/c_choice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="镜片信息:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <RadioGroup
+                        android:id="@+id/rdg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:checkedButton="@+id/check1"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@id/check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="豪雅1.5"/>
+                        <RadioButton
+                            android:id="@+id/check2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="豪雅1.56"/>
+                        <RadioButton
+                            android:id="@+id/check3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="豪雅1.6"/>
+                        <RadioButton
+                            android:id="@+id/check4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="豪雅1.67"/>
+                        <RadioButton
+                            android:id="@+id/check5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="豪雅1.74"/>
+                    </RadioGroup>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <View
+                    android:id="@+id/c_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="价格:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/widget_margin"
+                        android:text="优惠价:"
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                    <TextView
+                        android:id="@+id/frag_glasses_ratefee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/widget_margin"
+                        android:text=" "
+                        android:textSize="@dimen/font_size_order_deatil"/>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/line_defaut"
+                    android:background="@color/grayDark"/>
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_order_deatil"
+                    android:paddingRight="@dimen/margin_order_deatil"
+                    >
+
+                    <Button
+                        android:id="@+id/frag_glasses_rescan"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:background="@drawable/login_btn_selector"
+                        android:text="重新扫码"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

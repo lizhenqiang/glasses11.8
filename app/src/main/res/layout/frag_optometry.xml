@@ -1,0 +1,1902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView-->
+<!--android:id="@+id/yg_sv"-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:descendantFocusability="blocksDescendants"-->
+<!--android:scrollbars="none">-->
+
+<com.zhy.android.percent.support.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/yg_bj"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+
+        <RadioGroup
+            android:id="@+id/yg_rg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yg_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="验光"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/font_size_order_deatil"
+                />
+
+            <RadioButton
+                android:id="@+id/yg_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_btn_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="不验光"
+                android:textColor="@drawable/radio_btn_textcolor"
+                android:textSize="@dimen/font_size_order_deatil"
+                />
+        </RadioGroup>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="45dp"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:id="@+id/frag_optometry_search"-->
+    <!-->-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/yg_number"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="3"-->
+    <!--android:background="@drawable/border_gray_deep"-->
+    <!--android:gravity="left|center"-->
+    <!--android:hint="请输入流水号"-->
+    <!--android:inputType="number"-->
+    <!--android:paddingLeft="8dp"-->
+    <!--app:layout_textSizePercent="45%h"/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/yg_number_yes"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorLogin"-->
+    <!--android:paddingLeft="13dp"-->
+    <!--android:paddingRight="13dp"-->
+    <!--android:text="确定"-->
+    <!--android:textColor="@color/white"-->
+    <!--app:layout_textSizePercent="45%h"-->
+    <!--/>-->
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/frag_optometry_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:orientation="vertical"-->
+        <!-->-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:background="@drawable/login_btn_selector"-->
+        <!--android:gravity="center"-->
+        <!--android:text="验光数据"-->
+        <!--android:textColor="@color/white"-->
+        <!--app:layout_textSizePercent="45%"-->
+        <!--/>-->
+        <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/border_gray_deep"
+            android:orientation="vertical">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="验光单"
+                    app:layout_textSizePercent="45%"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayDeep"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="#ffe0e0"
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="用途"
+                    app:layout_textSizePercent="36%"
+                    app:layout_widthPercent="8%w"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="眼别"
+                    app:layout_textSizePercent="36%"
+                    app:layout_widthPercent="7%w"
+                    />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="球镜"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(SPH)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="柱镜"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(CYL)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="光轴"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(AXIS)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="棱镜"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(P)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="基底"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(B)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="下加光"
+                            app:layout_textSizePercent="26%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(ADD)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="瞳距"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="(PD)"
+                            app:layout_textSizePercent="33%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="裸眼"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="视力"
+                            app:layout_textSizePercent="36%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="旧镜"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="视力"
+                            app:layout_textSizePercent="36%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="矫正"
+                            app:layout_textSizePercent="36%"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="视力"
+                            app:layout_textSizePercent="36%"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayDeep"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="8%w"
+                    >
+
+                    <CheckBox
+                        android:id="@+id/yg_cb_yuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:checked="true"
+                        android:text="远"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="7%w"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="R"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    >
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanqiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanqiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanzhujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanzhujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanzhouwei"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanzhouwei"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanlengjing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_bg_selector"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="numberSigned|numberDecimal"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanlengjing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_bg_selector"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="numberSigned|numberDecimal"
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/yg_youyanjidi"
+                                android:layout_width="@dimen/jidi_size"
+                                android:layout_height="@dimen/jidi_size"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:textColor="#ffffffff"
+                                android:textSize="1sp"
+                                />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/yg_zuoyanjidi"
+                                android:layout_width="@dimen/jidi_size"
+                                android:layout_height="@dimen/jidi_size"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:textColor="#ffffffff"
+                                android:textSize="1sp"
+                                />
+                        </LinearLayout>
+
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/sign_youyanxiajiaguang"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="right|center_vertical"-->
+                            <!--android:text="+"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="@dimen/font_size_20sp"-->
+                            <!--/>-->
+
+                            <EditText
+                                android:id="@+id/yg_youyanxiajiaguang"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:inputType="number"
+                                app:layout_textSizePercent="26%w"
+                                />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/sign_zuoyanxiajiaguang"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="right|center_vertical"-->
+                            <!--android:text="+"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="@dimen/font_size_20sp"-->
+                            <!--/>-->
+
+                            <EditText
+                                android:id="@+id/yg_zuoyanxiajiaguang"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:inputType="number"
+                                app:layout_textSizePercent="26%w"
+                                />
+                        </LinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyantongju"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyantongju"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanluoyan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanluoyan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanjiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            android:textSize="@dimen/font_size_20sp"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanjiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            android:textSize="@dimen/font_size_20sp"/>
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_youyanjiaozheng"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_zuoyanjiaozheng"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="(必填)"
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayDeep"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    />
+
+                <com.zhy.android.percent.support.PercentRelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="8%w"
+                    >
+
+
+                    <CheckBox
+                        android:id="@+id/yg_cb_jin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="近"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+
+
+                </com.zhy.android.percent.support.PercentRelativeLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_widthPercent="7%w"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="R"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textSize="@dimen/font_size_20sp"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/grayDeep"
+                    />
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    >
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanqiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanqiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanzhujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanzhujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanguangzhou"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanguangzhou"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanlengjing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_bg_selector"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="numberSigned|numberDecimal"
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanlengjing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_bg_selector"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="numberSigned|numberDecimal"
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/yg_j_youyanjidi"
+                                android:layout_width="@dimen/jidi_size"
+                                android:layout_height="@dimen/jidi_size"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:textColor="#ffffffff"
+                                android:textSize="1sp"/>
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/yg_j_zuoyanjidi"
+                                android:layout_width="@dimen/jidi_size"
+                                android:layout_height="@dimen/jidi_size"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:textColor="#ffffffff"
+                                android:textSize="1sp"/>
+
+                        </LinearLayout>
+
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/sign_j_youyanxiajiaguang"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="right|center_vertical"-->
+                            <!--android:text="+"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="@dimen/font_size_20sp"-->
+                            <!--/>-->
+
+                            <EditText
+                                android:id="@+id/yg_j_youyanxiajiaguang"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:inputType="number"
+                                app:layout_textSizePercent="26%w"
+                                />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/sign_j_zuoyanxiajiaguang"-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="right|center_vertical"-->
+                            <!--android:text="+"-->
+                            <!--android:textColor="#000"-->
+                            <!--android:textSize="@dimen/font_size_20sp"-->
+                            <!--/>-->
+
+                            <EditText
+                                android:id="@+id/yg_j_zuoyanxiajiaguang"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@null"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:gravity="center"
+                                android:hint=""
+                                android:inputType="number"
+                                app:layout_textSizePercent="26%w"
+                                />
+                        </LinearLayout>
+
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyantongju"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyantongju"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanluoyan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanluoyan"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanjiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanjiujing"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/grayDeep"
+                        />
+
+                    <com.zhy.android.percent.support.PercentLinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        >
+
+                        <EditText
+                            android:id="@+id/yg_j_youyanjiaozheng"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grayDeep"
+                            />
+
+                        <EditText
+                            android:id="@+id/yg_j_zuoyanjiaozheng"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint=""
+                            app:layout_textSizePercent="26%w"
+                            />
+                    </com.zhy.android.percent.support.PercentLinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        />
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayDeep"
+                />
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/yg_cb_yuanjing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="原镜"
+                    android:textSize="@dimen/font_size_20sp"/>
+
+                />
+
+                <CheckBox
+                    android:id="@+id/yg_cb_laifang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="来方"
+                    android:textSize="@dimen/font_size_20sp"/>
+
+                />
+
+                <CheckBox
+                    android:id="@+id/yg_cb_chufang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="处方"
+                    android:textSize="@dimen/font_size_20sp"/>
+
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="(必选)"
+                    android:textSize="@dimen/font_size_20sp"/>
+                />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/grayDeep"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="备注："
+                    android:textSize="@dimen/font_size_20sp"/>
+                />
+
+                <EditText
+                    android:id="@+id/yg_ed_beizhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="right"
+                    android:hint="(选填)"
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_gray_deep"
+            android:orientation="vertical"
+            >
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="验光费：¥"
+                    app:layout_marginLeftPercent="3%"
+                    app:layout_textSizePercent="33%"
+                    />
+
+                <EditText
+                    android:id="@+id/yg_yanguangfei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:hint="(必填)"
+                    android:inputType="numberDecimal"
+                    app:layout_marginRightPercent="6%"
+                    app:layout_textSizePercent="33%"
+
+                    />
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <!--<com.zhy.android.percent.support.PercentLinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!-->-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="引正费用："-->
+            <!--app:layout_marginLeftPercent="3%"-->
+            <!--app:layout_textSizePercent="33%"-->
+            <!--/>-->
+
+            <!--<EditText-->
+            <!--android:id="@+id/yg_yinzhengfeiyong"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:hint="(没有该项消费可不填) "-->
+            <!--android:inputType="numberDecimal|numberSigned"-->
+            <!--app:layout_marginRightPercent="6%"-->
+            <!--app:layout_textSizePercent="33%"-->
+            <!--/>-->
+            <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+</com.zhy.android.percent.support.PercentLinearLayout>
+    <!--</com.zhy.android.percent.support.PercentLinearLayout>-->
+    <!--</ScrollView>-->

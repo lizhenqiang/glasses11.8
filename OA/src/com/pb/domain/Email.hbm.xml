@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.pb.domain">
+	<class name="Email">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="title" />
+		<property name="context" />
+		<property name="attachment" />
+		<property name="isRead" />
+		<property name="isDelete" />
+		<property name="senderDate" />
+		
+		<many-to-one name="sender" column="sender_id"></many-to-one>
+		<many-to-one name="reciver" column="reciver_id"></many-to-one>
+
+		
+
+	</class>
+
+</hibernate-mapping>

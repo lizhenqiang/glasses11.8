@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="horizontal"
+            android:background="@drawable/border_gray_deep">
+
+            <EditText
+                android:id="@+id/manage_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@null"
+                android:inputType="number"
+                app:layout_textSizePercent="40%h"
+                android:gravity="center"
+                android:hint="请输入手机号"/>
+
+            <View
+                android:layout_width="@dimen/line_defaut"
+                android:layout_height="match_parent"
+                android:background="@color/grayDeep"/>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/manage_begin_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/manage_begin_timemsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_textSizePercent="40%h"
+                    android:drawablePadding="@dimen/widget_margin"
+                    android:background="@null"
+                    android:drawableRight="@drawable/icon_menu"
+                    android:text="开始日期"/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/line_defaut"
+                android:layout_height="match_parent"
+                android:background="@color/grayDeep"/>
+
+
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/manage_end_time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/manage_end_timemsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_textSizePercent="40%h"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/widget_margin"
+                    android:drawableRight="@drawable/icon_menu"
+                    android:text="结束日期"/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <Button
+            android:id="@+id/manage_search"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            app:layout_textSizePercent="50%h"
+            android:text="搜索"
+            android:layout_marginLeft="30dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_btn_selector">
+
+        </Button>
+
+
+
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+    <com.remote.glasses.widget.MyPullRefreshListView
+        android:paddingTop="@dimen/widget_margin"
+        android:id="@+id/manage_refresh_list"
+        app:layout_marginLeftPercent="0%h"
+        app:layout_marginRightPercent="0%h"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/gray"
+        android:dividerHeight="20dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true" >
+        </com.remote.glasses.widget.MyPullRefreshListView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

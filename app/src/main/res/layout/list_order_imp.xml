@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="afterDescendants"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widget_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.7">
+            <TextView
+                android:id="@+id/order_list_title4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/widget_margin"
+        android:paddingLeft="@dimen/widget_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/order_list_title6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <TextView
+                android:id="@+id/order_list_title7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/widget_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/order_list_title10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0">
+            <TextView
+                android:id="@+id/order_list_title11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/widget_margin"
+        android:paddingRight="@dimen/widget_margin"
+        android:paddingBottom="@dimen/widget_margin">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/order_list_title16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品牌:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="幸福远程"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/order_list_title17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="订单状态:"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil"
+                android:textColor="@color/grayDeepDark"/>
+
+            <TextView
+                android:id="@+id/order_list_content17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="点击查看"
+                android:textColor="@color/colorLogin"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/font_size_order_deatil" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_defaut"
+        android:background="@color/grayDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商户单号:"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin"
+            android:textSize="@dimen/font_size_order_deatil"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:id="@+id/list_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_order_deatil"
+            android:padding="@dimen/widget_margin"
+            android:gravity="center_vertical|right"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单金额:"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/widget_margin"
+            android:textSize="@dimen/font_size_order_deatil"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:id="@+id/list_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥0.00"
+            android:textSize="@dimen/font_size_order_deatil"
+            android:padding="@dimen/widget_margin"
+            android:gravity="center_vertical|right"
+            android:textColor="@android:color/holo_red_dark"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

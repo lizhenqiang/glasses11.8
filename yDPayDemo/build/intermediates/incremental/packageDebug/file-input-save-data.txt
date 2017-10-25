@@ -1,0 +1,33 @@
+#Internal package file, do not edit.
+#Wed Oct 25 16:54:11 CST 2017
+2.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+5.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug\\icon_capture_wechat_jar.png
+5.set=ASSET
+3.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+6.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher.png
+2.set=ANDROID_RESOURCE
+4.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug
+7.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\resources.arsc
+7.set=ANDROID_RESOURCE
+count=10
+0.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug\\icon_capture_card_jar.png
+5.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug
+8.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+4.set=ASSET
+6.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+1.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\AndroidManifest.xml
+9.set=ANDROID_RESOURCE
+9.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_main.xml
+1.set=ANDROID_RESOURCE
+7.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+2.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu\\main.xml
+6.set=ANDROID_RESOURCE
+0.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug
+8.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+3.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_\\res\\menu-v11\\main.xml
+3.set=ANDROID_RESOURCE
+1.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+9.base=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\res\\resources-debug.ap_
+4.file=D\:\\glasses11.8\\yDPayDemo\\build\\intermediates\\assets\\debug\\icon_capture_alipay_jar.png
+8.set=DEX
+0.set=ASSET

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.pb.domain">
+	<class name="User">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" unique="true" />
+		<property name="password" />
+		<property name="age" />
+		<property name="phoneNumber" />
+		<property name="address" />
+		<property name="permission" />
+
+		<set name="emails">
+			<key column="reciver_id"></key>
+			<one-to-many class="Email" />
+
+		</set>
+		<set name="vocations">
+			<key column="applier_id"></key>
+			<one-to-many class="Vocation" />
+
+		</set>
+
+	</class>
+
+</hibernate-mapping>

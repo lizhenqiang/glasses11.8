@@ -1,0 +1,69 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\gradle.xml
+* .idea\libraries\
+* .idea\libraries\animated_vector_drawable_25_1_1.xml
+* .idea\libraries\appcompat_v7_25_1_1.xml
+* .idea\libraries\hamcrest_core_1_3.xml
+* .idea\libraries\junit_4_12.xml
+* .idea\libraries\support_annotations_25_1_1.xml
+* .idea\libraries\support_compat_25_1_1.xml
+* .idea\libraries\support_core_ui_25_1_1.xml
+* .idea\libraries\support_core_utils_25_1_1.xml
+* .idea\libraries\support_fragment_25_1_1.xml
+* .idea\libraries\support_media_compat_25_1_1.xml
+* .idea\libraries\support_v4_25_1_1.xml
+* .idea\libraries\support_vector_drawable_25_1_1.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\modules\
+* .idea\modules\YDPayDemo.iml
+* .idea\modules\app\
+* .idea\modules\app\app.iml
+* .idea\workspace.xml
+* gradle\
+* gradle\wrapper\
+* gradle\wrapper\gradle-wrapper.jar
+* gradle\wrapper\gradle-wrapper.properties
+* ic_launcher-web.png
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => yDPayDemo\src\main\AndroidManifest.xml
+* assets\ => yDPayDemo\src\main\assets\
+* libs\ydpay.jar => yDPayDemo\libs\ydpay.jar
+* lint.xml => yDPayDemo\lint.xml
+* res\ => yDPayDemo\src\main\res\
+* src\ => yDPayDemo\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

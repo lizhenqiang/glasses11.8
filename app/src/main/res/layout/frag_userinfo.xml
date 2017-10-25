@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:id="@+id/userinfo_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+        <EditText
+            android:id="@+id/userinfo_phone_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/border_gray_deep"
+            android:gravity="left|center"
+            android:hint="请输入手机号"
+            android:paddingLeft="@dimen/widget_margin"
+            android:inputType="number"
+
+            app:layout_textSizePercent="45%h"/>
+
+        <Button
+            android:id="@+id/userinfo_phone_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorLogin"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            app:layout_textSizePercent="45%h"
+            />
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/userinfo_msg_main"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:background="@color/gray"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/login_btn_selector"
+                android:gravity="center"
+                android:text="信息"
+                android:textColor="@color/white"
+                app:layout_textSizePercent="45%"
+                />
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@drawable/border_gray_deep"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp" >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="姓名："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(必填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性别："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+                    <RadioGroup
+                        android:id="@+id/userinfo_sex_rg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        app:layout_marginRightPercent="6%"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical|right"
+                        >
+                        <RadioButton
+                            android:id="@+id/userinfo_sex_secret"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="36%"
+                            android:text="保密"
+                            />
+                        <RadioButton
+                            android:id="@+id/userinfo_sex_nan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="36%"
+                            android:text="男"
+                            />
+                        <RadioButton
+                            android:id="@+id/userinfo_sex_nv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_textSizePercent="36%"
+                            android:text="女"
+                            />
+                    </RadioGroup>
+
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="出生日期："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="身份证号："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+                        android:digits="0123456789Xx"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="职业："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_prefession"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="手机号码："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_mobile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:editable="false"
+                        android:gravity="center_vertical|right"
+                        android:hint="(必填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+                        android:inputType="number"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_gray_deep"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+
+                <RadioGroup
+                    android:id="@+id/userinfo_address_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/userinfo_address_user"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_btn_bg"
+                        android:button="@null"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="用户地址"
+                        android:textColor="@drawable/radio_btn_textcolor"
+                        android:textSize="@dimen/font_size_order_deatil"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/userinfo_address_mendian"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/radio_btn_bg"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="门店地址"
+                        android:textColor="@drawable/radio_btn_textcolor"
+                        android:textSize="@dimen/font_size_order_deatil"
+                        />
+                </RadioGroup>
+
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:id="@+id/userinfo_country_bj"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="省/市/县："
+                        app:layout_marginLeftPercent="3%"
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_city"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:layout_marginLeftPercent="3%">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="联系地址："
+                        app:layout_textSizePercent="33%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_address"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_marginRightPercent="6%"
+                        app:layout_textSizePercent="33%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:background="@drawable/border_gray_deep"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="QQ/微信号："
+                        android:gravity="center_vertical"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginLeftPercent="3%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_qq"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginRightPercent="6%"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="医保卡号："
+                        android:gravity="center_vertical"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginLeftPercent="3%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_yibao_card"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginRightPercent="6%"
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+
+                <com.zhy.android.percent.support.PercentLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="备注："
+                        android:gravity="center_vertical"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginLeftPercent="3%"
+                        />
+
+                    <EditText
+                        android:id="@+id/userinfo_remark"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:hint="(选填)"
+                        app:layout_textSizePercent="33%"
+                        app:layout_marginRightPercent="6%"
+
+                        />
+                </com.zhy.android.percent.support.PercentLinearLayout>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+  </ScrollView>
