@@ -4,53 +4,40 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import com.google.gson.Gson;
 import com.litesuits.orm.LiteOrm;
 import com.litesuits.orm.db.assit.QueryBuilder;
-import com.lzy.okhttputils.OkHttpUtils;
-import com.lzy.okhttputils.request.GetRequest;
-import com.lzy.okhttputils.request.PostRequest;
 import com.remote.glasses.R;
 import com.remote.glasses.base.BaseFragment;
 import com.remote.glasses.base.MyApplication;
 import com.remote.glasses.bean.GlassesBean;
-import com.remote.glasses.bean.UserInfo;
-import com.remote.glasses.set.NetPath;
-import com.remote.glasses.utils.L;
 import com.remote.glasses.utils.ListUtils;
 import com.remote.glasses.utils.PreferencesUtils;
-import com.remote.glasses.utils.ToastUtil;
-import com.remote.glasses.utils.ToolsCallback;
 import com.zbar.lib.CaptureActivity;
 import com.zhy.android.percent.support.PercentLinearLayout;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
-
-import okhttp3.Request;
-import okhttp3.Response;
 
 /**
  * Created by Feics on 2016/7/8.
  */
 public class GlassesFragment extends BaseFragment implements View.OnClickListener {
-    private Button scan, rescan;
-    private ScrollView glassInfo;
-    private TextView brand, category, model, color, goodPackage, amount, fee, ratefee;
+    private Button scan, rescan,rescan2;
+    private ScrollView glassInfo,goodsInfo;
+    private ImageView goodsPhoto;
+    private TextView brand, category, model, color, goodPackage, amount, fee, ratefee,name,price,vipPrice,barcode,skuNumber,description;
     private final static int SCAN = 1000;
     private LiteOrm liteOrm;
     private GlassesBean mGlassesBean;
@@ -85,9 +72,22 @@ public class GlassesFragment extends BaseFragment implements View.OnClickListene
         scan = (Button) view.findViewById(R.id.frag_glasses_scan);
         percentLinearLayout = (PercentLinearLayout)view.findViewById(R.id.c_choice);
         viewLines = (View)view.findViewById(R.id.c_lines);
+
+        //goods对应布局
+        goodsInfo = (ScrollView) view.findViewById(R.id.frag_goods_sv_info);
+        name = (TextView) view.findViewById(R.id.frag_goods_name);
+        price = (TextView) view.findViewById(R.id.frag_goods_price);
+        vipPrice = (TextView) view.findViewById(R.id.frag_goods_vipPrice);
+        skuNumber = (TextView) view.findViewById(R.id.frag_goods_skuNumber);
+        barcode = (TextView) view.findViewById(R.id.frag_goods_barcode);
+        description = (TextView) view.findViewById(R.id.frag_goods_description);
+        goodsPhoto = (ImageView) view.findViewById(R.id.frag_goods_photo);
+
         scan.setOnClickListener(this);
 
+
         rescan = (Button) view.findViewById(R.id.frag_glasses_rescan);
+        rescan2 = (Button) view.findViewById(R.id.frag_goods_rescan2);
         rdg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, @IdRes int checkedId) {
@@ -113,6 +113,7 @@ public class GlassesFragment extends BaseFragment implements View.OnClickListene
             }
         });
         rescan.setOnClickListener(this);
+        rescan2.setOnClickListener(this);
         return view;
     }
 
